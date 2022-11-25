@@ -19,7 +19,6 @@
 |[12] | Random Number Generators |
 |[13] | Formulas |
 ---
-
 # [0] History
 ## 0a. Timeline
 | # | Section   | 
@@ -97,7 +96,7 @@
 		* Advantage > it is essentially unbreakable. 
 		* Disadvantage > it takes lots of work as you'd have to generate the pad to be used, each time.
 	* *Morse Code* → Encoding method, which translates characters into sequences of dots (.) and dashes (-)
-
+---
 # [1] Encryption Standards
 ## 1a. Certificates & Digital Signatures
 ➢ **CA (Certificate Authority)**  → 
@@ -132,7 +131,7 @@
 * PKI services: Confidentiality, Integrity, Availability, Authentication, Non-repudiation.
 * A PKI is often set up w/ multiple levels of CAs. ‘Root’ is the top level CA, and lower-level CAs verify the user keys. 
 	* In PKI, Bob encrypts the message w/ Alice’s Public key. Alice then decrypts the message w/ her private key. 
-
+---
 # [2] Fundamentals - Recap
 ## 2a. General Terms
 ➢ **Cryptography** → 
@@ -210,7 +209,7 @@
 * Algebraic attack: exploits vulnerabilities w/in the intrinsic algebraic structure of mathematical functions. 
 * Birthday attack: depends on duplicate values occurring.
 * Frequency analysis attack.
-
+---
 # [3] Number Theory
 ➢ **Binary Math**: Basic premise is knowing what combination of binary digits will produce a binary “1”. 
 * AND → requires two 1’s to output a 1. (1 & 1 = 1)
@@ -239,7 +238,7 @@
 ➢ **Prime number** → is a value which only has factors of 1 and itself (ex. 7, 13, 23, etc.)
 * And used in areas such as key exchange and in public key encryption.
 * Factorizing the result of the multiplication of 2 large prime numbers → takes huge amounts of computational power & time.
-
+---
 # [4] Symmetric Cryptography
 ## 4a. Recap
 ➢ **Symmetric Cryptography** (aka Secret Key encryption) → 
@@ -370,7 +369,7 @@
 * P-CBC: Propagating CBC
 	* Like CBC mode. Mixes bits from previous ciphertext AND plaintext blocks before encrypting them.
 	* If one ciphertext bit is damaged, the next plaintext block and all subsequent blocks will be damaged and unable to decrypt.
-
+---
 # [5] Asymmetric Cryptography
 ➢ **Asymmetric Cryptography**  → Using a public and private key.
 * RSA: 
@@ -389,7 +388,7 @@
 * DH (Diffie-Hellman): 
 	* ​​No authentication. 
 	* Vulnerable to MITM attacks.
-
+---
 # [6] Hash Functions
 ➢ **Hash Functions**  → 
 * MD5 & MD6: 
@@ -420,13 +419,13 @@
 * One character is changed → ENTIRE hash is changed. 
 * Windows stores passwords as a hash in a file called a SAM file. 
 * Rainbow tables → store common hashes to be used for attacks. 
-
+---
 # [7] Bitcoin
  ➢ Questions:
 * Q: How is information about Bitcoin transitions stored? → Distributed peer-to-peer network.
 * Q: What is one of the primary characteristics of a blockchain in the context of Bitcoin? → Adding blocks to a blockchain is computationally expensive. 
 * Q: In the context of Bitcoin, what is the length (in bits) of the private key used to sign transactions (and associated with an individual wallet)? → 256 bits.
-
+---
 # [8] WiFI Encryptions
 ➢ **WiFi Encryptions**  → 
 * WEP
@@ -450,13 +449,13 @@
 * Q: What’s a difference between WPA-Enterprise & WPA-Personal? → Support for an authentication server (enterprise).
 * Q: Cipher used w/ WEP → RC4.
 * Q: How does TKIP improve WPA over WEP? → Hashes the IV and secret key.
-
+---
 # [9] Tunneling
 ➢ Questions → 
 * Q: VPN connection is configured, and is utilizing IPSec tunnel mode (w/ ESP) b/w corporate and remote offices. Where can the packets be inspected by IDSs and virus scanners? → At headquarters AND offsite office
 * Q: Which default port must be open for the IPsec key exchange to be successful? → UDP 500
 * Q: Which protocol indicates the VPN is using Authentication Header (AH)? → 51
-
+---
 # [10] Key Exchanges
 ➢ **Key Exchanges**  → 
 * DH (Diffie-Hellman)
@@ -466,7 +465,7 @@
 * ECDH (Elliptic Curve Diffie-Hellman)
 	* Ensures PFS during key exchange.
 * KEA (Key Exchange Algorithm)
-
+---
 # [11] Secure Channel
 ➢ **Secure Channel**  → 
 * OCB (Offset Codebook Mode) 
@@ -477,7 +476,7 @@
 	* Speed improvement on CCM. No known patent issues.
 * GCM (Galois Counter Mode) 
 	* NIST standard block cipher mode. Improvement on CWC. No known patent issues.
-
+---
 # [12] Random Number Generators
 ➢ **Random Number Generators** → 
 * Table Lookup Generators
@@ -490,7 +489,7 @@
 * Blum Blum Shub → The algorithm is: Xn+1=Xn2 Mod m
 Yarrow → By Bruce Schneider, john Kesley & Niels Ferguson, supplanted by Fortuna. 
 Fortuna → Group of PRNGs. 3 main components: generator, entropy accumulator and seed file.
-
+---
 # [13] Formulas
 ➢ **Formulas** → 
 * RSA
@@ -502,3 +501,5 @@ Fortuna → Group of PRNGs. 3 main components: generator, entropy accumulator an
 	* decryption: P = E(k,c)      [Plaintext = EncryptionFunction (key, ciphertext)]
 * EC (Elliptic Curve)
 	* y2 = (x3 + Ax + B)
+
+
